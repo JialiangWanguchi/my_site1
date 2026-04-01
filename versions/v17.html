@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aether v17 | Dark/Light Toggle Layout</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: #111; color: #eee; font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; padding: 2rem; transition: background 0.5s; }
+        .card { width: 100%; max-width: 1200px; display: grid; grid-template-columns: 1fr 1.2fr; border-radius: 40px; overflow: hidden; background: #1a1a1a; box-shadow: 0 40px 100px rgba(0,0,0,0.5); }
+        .hero-img { background: linear-gradient(135deg, #111, #333); display: flex; align-items: center; justify-content: center; font-size: 10rem; opacity: 0.1; }
+        .text-side { padding: 6rem; display: flex; flex-direction: column; justify-content: center; }
+        h1 { font-size: 5rem; font-weight: 800; margin: 0; line-height: 1; letter-spacing: -3px; }
+        p { font-size: 1.5rem; color: #888; margin: 2rem 0; line-height: 1.5; }
+        .cta { display: inline-block; padding: 1.5rem 3rem; background: #fff; color: #000; text-decoration: none; border-radius: 16px; font-weight: 700; font-size: 1.25rem; transition: background 0.3s; }
+        .cta:hover { background: #ccc; }
+        .toggle-sim { position: absolute; top: 3rem; right: 3rem; width: 60px; height: 30px; background: #333; border-radius: 100px; }
+        .toggle-sim::after { content: ""; position: absolute; width: 24px; height: 24px; background: #eee; border-radius: 50%; top: 3px; left: 3px; }
+    </style>
+</head>
+<body>
+    <div class="toggle-sim"></div>
+    <div class="card">
+        <div class="hero-img">AE</div>
+        <div class="text-side">
+            <h1>Always Focused.</h1>
+            <p>v17 explores the high-contrast dark mode aesthetics of v4 within the refined structure of v14. Modern, sleek, and easy on the eyes.</p>
+            <a href="#" class="cta">Try Dark Mode</a>
+        </div>
+    </div>
+</body>
+</html>
