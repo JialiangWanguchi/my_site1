@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aether v4 | Retro Terminal</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: #000; color: #0f0; font-family: "Courier New", Courier, monospace; padding: 2rem; margin: 0; line-height: 1.4; overflow: hidden; }
+        .container { max-width: 800px; margin: 0 auto; border: 1px solid #0f0; padding: 2rem; box-shadow: 0 0 20px #030; min-height: 90vh; }
+        h1 { font-size: 3rem; text-transform: uppercase; margin-bottom: 2rem; text-shadow: 0 0 10px #0f0; }
+        .cmd { color: #fff; margin-bottom: 1rem; }
+        .cursor { display: inline-block; width: 10px; height: 1.2rem; background: #0f0; animation: blink 1s step-end infinite; vertical-align: middle; }
+        @keyframes blink { 50% { opacity: 0; } }
+        .list { list-style: none; padding: 0; margin: 2rem 0; }
+        .list li::before { content: "> "; margin-right: 10px; }
+        .cta { display: inline-block; border: 1px solid #0f0; padding: 1rem; text-decoration: none; color: #0f0; margin-top: 2rem; background: #010; }
+        .cta:hover { background: #0f0; color: #000; box-shadow: 0 0 10px #0f0; }
+        .scanline { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06)); background-size: 100% 2px, 3px 100%; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div class="scanline"></div>
+    <div class="container">
+        <div class="cmd">LOGIN: AETHER_USER_01</div>
+        <div class="cmd">INITIATING MINIMALIST_WRITER_SPACE... OK</div>
+        <h1>SYSTEM: AETHER</h1>
+        <p>A minimalist writing tool for the distracted digital age.</p>
+        <ul class="list">
+            <li>ZERO LATENCY TEXT INPUT</li>
+            <li>LOCAL-FIRST CLOUD BACKUP</li>
+            <li>END-TO-END FOCUS ENCRYPTION</li>
+        </ul>
+        <div class="cmd">READY TO START? <span class="cursor"></span></div>
+        <a href="#" class="cta">EXECUTE STARTUP</a>
+    </div>
+</body>
+</html>

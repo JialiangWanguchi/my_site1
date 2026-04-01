@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aether v9 | Glassmorphism</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; min-height: 100vh; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .circle { position: absolute; border-radius: 50%; background: rgba(255, 255, 255, 0.1); filter: blur(50px); pointer-events: none; }
+        .circle-1 { width: 500px; height: 500px; top: -100px; left: -100px; background: #ff7eb3; }
+        .circle-2 { width: 400px; height: 400px; bottom: -50px; right: -50px; background: #8ec5fc; }
+        .glass-card { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.2); width: 800px; padding: 4rem; text-align: center; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); z-index: 10; }
+        h1 { font-size: 5rem; margin: 0; color: #fff; font-weight: 800; letter-spacing: -2px; }
+        p { font-size: 1.5rem; color: rgba(255, 255, 255, 0.8); margin-top: 1rem; line-height: 1.6; }
+        .cta { display: inline-block; padding: 1rem 3rem; background: #fff; color: #764ba2; text-decoration: none; font-size: 1.25rem; font-weight: bold; border-radius: 50px; margin-top: 3rem; transition: all 0.3s; }
+        .cta:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="glass-card">
+        <h1>Aether</h1>
+        <p>Crystal clear focus for your creative mind. Experience the future of writing through a transparent interface.</p>
+        <a href="#" class="cta">Start Your Journey</a>
+    </div>
+</body>
+</html>
